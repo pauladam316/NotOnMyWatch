@@ -1,4 +1,4 @@
-update=2018-08-16 12:52:13 PM
+update=2018-08-24 9:03:00 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,4 @@ LibName32=contrib
 LibName33=valves
 LibName34=Libraries/PIC
 LibName35=Libraries/Placeholders
+LibName36=Libraries/Watch Parts

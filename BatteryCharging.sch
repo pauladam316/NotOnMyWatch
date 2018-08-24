@@ -1,0 +1,229 @@
+EESchema Schematic File Version 2
+LIBS:Watch-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PIC
+LIBS:Placeholders
+LIBS:Watch Parts
+LIBS:Watch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP73831T-2ACI/OT U?
+U 1 1 5B801A35
+P 5550 3700
+F 0 "U?" H 5550 3950 60  0000 C CNN
+F 1 "MCP73831T-2ACI/OT" H 5550 3300 60  0000 C CNN
+F 2 "" H 5500 3700 60  0001 C CNN
+F 3 "" H 5500 3700 60  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B801A7E
+P 6800 4000
+F 0 "C?" H 6825 4100 50  0000 L CNN
+F 1 "10uF" H 6825 3900 50  0000 L CNN
+F 2 "" H 6838 3850 50  0001 C CNN
+F 3 "" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B801AE1
+P 6400 4000
+F 0 "R?" V 6480 4000 50  0000 C CNN
+F 1 "7.5k" V 6400 4000 50  0000 C CNN
+F 2 "" V 6330 4000 50  0001 C CNN
+F 3 "" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 3850
+Wire Wire Line
+	6000 3600 7000 3600
+Wire Wire Line
+	6800 3600 6800 3850
+$Comp
+L GND #PWR?
+U 1 1 5B801BE3
+P 6000 3800
+F 0 "#PWR?" H 6000 3550 50  0001 C CNN
+F 1 "GND" H 6000 3650 50  0000 C CNN
+F 2 "" H 6000 3800 50  0001 C CNN
+F 3 "" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B801C03
+P 6400 4150
+F 0 "#PWR?" H 6400 3900 50  0001 C CNN
+F 1 "GND" H 6400 4000 50  0000 C CNN
+F 2 "" H 6400 4150 50  0001 C CNN
+F 3 "" H 6400 4150 50  0001 C CNN
+	1    6400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B801C2D
+P 6800 4150
+F 0 "#PWR?" H 6800 3900 50  0001 C CNN
+F 1 "GND" H 6800 4000 50  0000 C CNN
+F 2 "" H 6800 4150 50  0001 C CNN
+F 3 "" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 4200 3300 0    60   ~ 0
+Charge at battery capacity, 150mAh=150mA charging rate = 7.5k
+Text GLabel 7000 3600 2    60   Input ~ 0
+BATT
+Connection ~ 6800 3600
+$Comp
+L C 10uF?
+U 1 1 5B801E65
+P 4650 3850
+F 0 "10uF?" H 4675 3950 50  0000 L CNN
+F 1 "10uF" H 4675 3750 50  0000 L CNN
+F 2 "" H 4688 3700 50  0001 C CNN
+F 3 "" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3600 5050 3600
+Wire Wire Line
+	4650 3700 4650 3600
+$Comp
+L GND #PWR?
+U 1 1 5B801EE2
+P 4650 4000
+F 0 "#PWR?" H 4650 3750 50  0001 C CNN
+F 1 "GND" H 4650 3850 50  0000 C CNN
+F 2 "" H 4650 4000 50  0001 C CNN
+F 3 "" H 4650 4000 50  0001 C CNN
+	1    4650 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 3600
+$Comp
+L Conn_01x02 J?
+U 1 1 5B8021C7
+P 2500 3900
+F 0 "J?" H 2500 4000 50  0000 C CNN
+F 1 "BATTERY" H 2500 3700 50  0000 C CNN
+F 2 "" H 2500 3900 50  0001 C CNN
+F 3 "" H 2500 3900 50  0001 C CNN
+	1    2500 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay U?
+U 1 1 5B8023BC
+P 3350 4700
+F 0 "U?" H 3350 5000 60  0000 C CNN
+F 1 "Relay" H 3350 4450 60  0000 C CNN
+F 2 "" H 3300 4700 60  0001 C CNN
+F 3 "" H 3300 4700 60  0001 C CNN
+	1    3350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B802489
+P 2950 4800
+F 0 "#PWR?" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2950 4650 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4800 4000 4800
+Wire Wire Line
+	3850 4800 3850 5000
+Wire Wire Line
+	3850 5000 4000 5000
+Connection ~ 3850 4800
+Wire Wire Line
+	2700 3800 4050 3800
+Wire Wire Line
+	3750 4550 3900 4550
+Wire Wire Line
+	3900 4550 3900 3800
+$Comp
+L GND #PWR?
+U 1 1 5B802593
+P 2700 3900
+F 0 "#PWR?" H 2700 3650 50  0001 C CNN
+F 1 "GND" H 2700 3750 50  0000 C CNN
+F 2 "" H 2700 3900 50  0001 C CNN
+F 3 "" H 2700 3900 50  0001 C CNN
+	1    2700 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 5000 2    60   Input ~ 0
+VOUT
+Text GLabel 4050 3800 2    60   Input ~ 0
+BATT
+Connection ~ 3900 3800
+Text HLabel 4000 4800 2    60   Input ~ 0
+USB
+Text HLabel 2950 4550 0    60   Input ~ 0
+USB
+Text HLabel 4550 3600 0    60   Input ~ 0
+USB
+Text Notes 2350 4750 0    60   ~ 0
+Default On
+$EndSCHEMATC

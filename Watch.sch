@@ -34,12 +34,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:PIC
 LIBS:Placeholders
+LIBS:Watch Parts
 LIBS:Watch-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -59,17 +60,6 @@ F 2 "" H 4500 3350 60  0001 C CNN
 F 3 "" H 4500 3350 60  0001 C CNN
 	1    4500 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J?
-U 1 1 5B74C839
-P 1350 2200
-F 0 "J?" H 1350 2300 50  0000 C CNN
-F 1 "BATTERY" H 1350 2000 50  0000 C CNN
-F 2 "" H 1350 2200 50  0001 C CNN
-F 3 "" H 1350 2200 50  0001 C CNN
-	1    1350 2200
-	-1   0    0    1   
 $EndComp
 $Comp
 L USB_C_Receptacle J?
@@ -288,19 +278,6 @@ F 3 "" H 3850 1950 60  0001 C CNN
 	1    3850 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR?
-U 1 1 5B75AF29
-P 1550 2200
-F 0 "#PWR?" H 1550 1950 50  0001 C CNN
-F 1 "GND" H 1550 2050 50  0000 C CNN
-F 2 "" H 1550 2200 50  0001 C CNN
-F 3 "" H 1550 2200 50  0001 C CNN
-	1    1550 2200
-	1    0    0    -1  
-$EndComp
-Text GLabel 1550 2100 2    60   Input ~ 0
-3.7v
 Text GLabel 3250 2150 0    60   Input ~ 0
 3.7v
 Text GLabel 4400 2150 2    60   Input ~ 0
@@ -322,4 +299,22 @@ Text GLabel 8250 5250 2    60   Input ~ 0
 3v
 Connection ~ 8100 5250
 Connection ~ 8100 3450
+$Sheet
+S 1300 1350 1100 450 
+U 5B80199A
+F0 "Charging Circuitry" 60
+F1 "BatteryCharging.sch" 60
+F2 "VOUT" I R 2400 1600 60 
+F3 "USB" I L 1300 1600 60 
+$EndSheet
+Wire Wire Line
+	1700 3450 1700 2450
+Wire Wire Line
+	1700 2450 1150 2450
+Wire Wire Line
+	1150 2450 1150 1600
+Wire Wire Line
+	1150 1600 1300 1600
+Text GLabel 2400 1600 2    60   Input ~ 0
+3.7v
 $EndSCHEMATC
