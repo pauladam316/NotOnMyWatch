@@ -40,7 +40,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -60,17 +60,6 @@ F 2 "" H 4500 3350 60  0001 C CNN
 F 3 "" H 4500 3350 60  0001 C CNN
 	1    4500 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J?
-U 1 1 5B74C839
-P 700 750
-F 0 "J?" H 700 850 50  0000 C CNN
-F 1 "BATTERY" H 700 550 50  0000 C CNN
-F 2 "" H 700 750 50  0001 C CNN
-F 3 "" H 700 750 50  0001 C CNN
-	1    700  750 
-	-1   0    0    1   
 $EndComp
 $Comp
 L USB_C_Receptacle J?
@@ -289,19 +278,6 @@ F 3 "" H 3850 1950 60  0001 C CNN
 	1    3850 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR?
-U 1 1 5B75AF29
-P 900 750
-F 0 "#PWR?" H 900 500 50  0001 C CNN
-F 1 "GND" H 900 600 50  0000 C CNN
-F 2 "" H 900 750 50  0001 C CNN
-F 3 "" H 900 750 50  0001 C CNN
-	1    900  750 
-	1    0    0    -1  
-$EndComp
-Text GLabel 900  650  2    60   Input ~ 0
-3.7v
 Text GLabel 3250 2150 0    60   Input ~ 0
 3.7v
 Text GLabel 4400 2150 2    60   Input ~ 0
@@ -323,47 +299,29 @@ Text GLabel 8250 5250 2    60   Input ~ 0
 3v
 Connection ~ 8100 5250
 Connection ~ 8100 3450
-$Comp
-L MCP73831T-2ACI/OT U?
-U 1 1 5B80026E
-P 2050 800
-F 0 "U?" H 2050 1050 60  0000 C CNN
-F 1 "MCP73831T-2ACI/OT" H 2100 550 60  0000 C CNN
-F 2 "" H 2000 800 60  0001 C CNN
-F 3 "" H 2000 800 60  0001 C CNN
-	1    2050 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 5B8010C1
-P 2900 850
-F 0 "C?" H 2925 950 50  0000 L CNN
-F 1 "10uF" H 2925 750 50  0000 L CNN
-F 2 "" H 2938 700 50  0001 C CNN
-F 3 "" H 2900 850 50  0001 C CNN
-	1    2900 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 700  2900 700 
-$Comp
-L GND #PWR?
-U 1 1 5B80126E
-P 2900 1000
-F 0 "#PWR?" H 2900 750 50  0001 C CNN
-F 1 "GND" H 2900 850 50  0000 C CNN
-F 2 "" H 2900 1000 50  0001 C CNN
-F 3 "" H 2900 1000 50  0001 C CNN
-	1    2900 1000
-	1    0    0    -1  
-$EndComp
-Text GLabel 1550 700  0    60   Input ~ 0
-3.7v
 $Sheet
 S 1300 1350 1100 450 
 U 5B80199A
 F0 "Charging Circuitry" 60
 F1 "BatteryCharging.sch" 60
+F2 "VOUT" I R 2400 1600 60 
+F3 "USB" I L 1300 1600 60 
+$EndSheet
+Wire Wire Line
+	1700 3450 1700 2450
+Wire Wire Line
+	1700 2450 1150 2450
+Wire Wire Line
+	1150 2450 1150 1600
+Wire Wire Line
+	1150 1600 1300 1600
+Text GLabel 2400 1600 2    60   Input ~ 0
+3.7v
+$Sheet
+S 6350 1900 1100 400 
+U 5B85BF9E
+F0 "OLEDCircuit" 60
+F1 "DisplayCircuitry.sch" 60
+F2 "3.7v" I L 6350 1950 60 
 $EndSheet
 $EndSCHEMATC

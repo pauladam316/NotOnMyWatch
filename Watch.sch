@@ -40,7 +40,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -317,4 +317,21 @@ Wire Wire Line
 	1150 1600 1300 1600
 Text GLabel 2400 1600 2    60   Input ~ 0
 3.7v
+$Sheet
+S 3550 950  550  800 
+U 5B85BF9E
+F0 "OLEDCircuit" 60
+F1 "DisplayCircuitry.sch" 60
+F2 "3.7v" I L 3550 1050 60 
+F3 "VCI" I L 3550 1150 60 
+F4 "SDIN" I L 3550 1250 60 
+F5 "SCLK" I L 3550 1350 60 
+F6 "CS#" I L 3550 1450 60 
+F7 "D/C#" I L 3550 1550 60 
+F8 "RES#" I L 3550 1650 60 
+$EndSheet
+Text GLabel 3550 1050 0    60   Input ~ 0
+3.7v
+Text GLabel 3550 1150 0    60   Input ~ 0
+3v
 $EndSCHEMATC

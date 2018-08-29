@@ -1,0 +1,210 @@
+EESchema Schematic File Version 2
+LIBS:Watch-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PIC
+LIBS:Placeholders
+LIBS:Watch Parts
+LIBS:Watch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FAN5331SX U?
+U 1 1 5B86D742
+P 5750 4200
+F 0 "U?" H 5800 4600 60  0000 C CNN
+F 1 "FAN5331SX" H 5800 4200 60  0000 C CNN
+F 2 "" H 5750 4200 60  0001 C CNN
+F 3 "" H 5750 4200 60  0001 C CNN
+	1    5750 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B86D7FA
+P 4850 4900
+F 0 "#PWR?" H 4850 4650 50  0001 C CNN
+F 1 "GND" H 4850 4750 50  0000 C CNN
+F 2 "" H 4850 4900 50  0001 C CNN
+F 3 "" H 4850 4900 50  0001 C CNN
+	1    4850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B86D810
+P 4850 4750
+F 0 "C?" H 4875 4850 50  0000 L CNN
+F 1 "10uF" H 4875 4650 50  0000 L CNN
+F 2 "" H 4888 4600 50  0001 C CNN
+F 3 "" H 4850 4750 50  0001 C CNN
+	1    4850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4500 4850 4600
+Connection ~ 4850 4500
+Wire Wire Line
+	5300 4300 5200 4300
+Wire Wire Line
+	5200 4300 5200 4900
+Connection ~ 5200 4500
+$Comp
+L L L?
+U 1 1 5B86D9BB
+P 5750 4900
+F 0 "L?" V 5700 4900 50  0000 C CNN
+F 1 "L" V 5825 4900 50  0000 C CNN
+F 2 "" H 5750 4900 50  0001 C CNN
+F 3 "" H 5750 4900 50  0001 C CNN
+	1    5750 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 4900 5600 4900
+Wire Wire Line
+	5900 4900 6350 4900
+Wire Wire Line
+	6250 4500 6250 4900
+Wire Wire Line
+	6250 4500 6150 4500
+$Comp
+L D D?
+U 1 1 5B86DA58
+P 6500 4900
+F 0 "D?" H 6500 5000 50  0000 C CNN
+F 1 "BAT54T1G" H 6500 4800 50  0000 C CNN
+F 2 "" H 6500 4900 50  0001 C CNN
+F 3 "" H 6500 4900 50  0001 C CNN
+	1    6500 4900
+	-1   0    0    1   
+$EndComp
+Connection ~ 6250 4900
+$Comp
+L R R?
+U 1 1 5B86DAF4
+P 6750 4600
+F 0 "R?" V 6830 4600 50  0000 C CNN
+F 1 "100k" V 6750 4600 50  0000 C CNN
+F 2 "" V 6680 4600 50  0001 C CNN
+F 3 "" H 6750 4600 50  0001 C CNN
+	1    6750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4300 7350 4300
+Wire Wire Line
+	6750 4300 6750 4450
+Wire Wire Line
+	6650 4900 7300 4900
+$Comp
+L R R?
+U 1 1 5B86DCC0
+P 7500 4300
+F 0 "R?" V 7580 4300 50  0000 C CNN
+F 1 "10k" V 7500 4300 50  0000 C CNN
+F 2 "" V 7430 4300 50  0001 C CNN
+F 3 "" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B86DD0B
+P 7800 4450
+F 0 "#PWR?" H 7800 4200 50  0001 C CNN
+F 1 "GND" H 7800 4300 50  0000 C CNN
+F 2 "" H 7800 4450 50  0001 C CNN
+F 3 "" H 7800 4450 50  0001 C CNN
+	1    7800 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 4300
+$Comp
+L C C?
+U 1 1 5B86DFFB
+P 7050 4600
+F 0 "C?" H 7075 4700 50  0000 L CNN
+F 1 "0.1uF" H 7075 4500 50  0000 L CNN
+F 2 "" H 7088 4450 50  0001 C CNN
+F 3 "" H 7050 4600 50  0001 C CNN
+	1    7050 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4300 7050 4450
+Connection ~ 7050 4300
+Wire Wire Line
+	7050 4900 7050 4750
+Wire Wire Line
+	7650 4300 7800 4300
+Wire Wire Line
+	7800 4300 7800 4450
+Text HLabel 7300 4900 2    60   Input ~ 0
+13v
+Wire Wire Line
+	6750 4750 6750 4900
+Connection ~ 6750 4900
+Connection ~ 7050 4900
+Text HLabel 4600 4500 0    60   Input ~ 0
+3.7v
+Wire Wire Line
+	4600 4500 5300 4500
+$Comp
+L GND #PWR?
+U 1 1 5B86E5F7
+P 6500 4500
+F 0 "#PWR?" H 6500 4250 50  0001 C CNN
+F 1 "GND" H 6500 4350 50  0000 C CNN
+F 2 "" H 6500 4500 50  0001 C CNN
+F 3 "" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4400 6500 4400
+Wire Wire Line
+	6500 4400 6500 4500
+$EndSCHEMATC
