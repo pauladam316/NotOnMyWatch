@@ -334,4 +334,24 @@ Text GLabel 3550 1050 0    60   Input ~ 0
 3.7v
 Text GLabel 3550 1150 0    60   Input ~ 0
 3v
+Text GLabel 7600 4950 2    60   Input ~ 0
+RES#
+Text GLabel 7600 4850 2    60   Input ~ 0
+D/C#
+Text GLabel 7600 4750 2    60   Input ~ 0
+CS#
+Text GLabel 7600 4650 2    60   Input ~ 0
+SCLK
+Text GLabel 7600 4550 2    60   Input ~ 0
+SDIN
+Text GLabel 3550 1250 0    60   Input ~ 0
+SDIN
+Text GLabel 3550 1350 0    60   Input ~ 0
+SCLK
+Text GLabel 3550 1450 0    60   Input ~ 0
+CS#
+Text GLabel 3550 1550 0    60   Input ~ 0
+D/C#
+Text GLabel 3550 1650 0    60   Input ~ 0
+RES#
 $EndSCHEMATC
